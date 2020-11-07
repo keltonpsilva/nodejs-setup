@@ -1,10 +1,9 @@
 import { Router } from 'express';
 
-import EmailController from './controllers/EmailController';
+import HomeController from './controllers/HomeController';
 
 const routes = Router();
 
-routes.post('/', EmailController.Post);
-routes.get('/', EmailController.Get);
+routes.get('/', HomeController.Index);
 
 export default routes;
